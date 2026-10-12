@@ -1,0 +1,20 @@
+# Blender Extension Manifest (Blender 4.2+ extensions platform)
+
+schema_version = "1.0.0"
+
+id = "copy_bone_names"
+version = "1.0.0"
+name = "Copy Bone Names"
+tagline = "Copy an armature's bone names to the clipboard"
+maintainer = "shintheweapon"
+type = "add-on"
+
+# Developed and tested with Blender 4.5
+blender_version_min = "4.5.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+
+tags = ["Rigging"]
+
+[permissions]
+clipboard = "Copy bone names to the clipboard"
