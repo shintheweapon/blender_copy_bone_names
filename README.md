@@ -11,7 +11,7 @@ Requires Blender 4.5 or later.
 
 ## Install
 
-1. Download or build `copy_bone_names-1.0.0.zip` (see [Build](#build)).
+1. Download `copy_bone_names-1.0.0.zip` from this repository's Releases page, or build it (see [Build](#build)).
 2. In Blender: **Edit > Preferences > Get Extensions**, open the menu at the top right, choose **Install from Disk**
    and pick the zip.
 
@@ -66,7 +66,8 @@ replace the clipboard write, because background Blender cannot read the clipboar
 ```
 
 It runs Blender's extension build on `src` and writes `dist\copy_bone_names-<version>.zip`, then checks the zip's
-layout. Pass `-Blender "<path to blender.exe>"` when Blender is elsewhere.
+layout. It needs the path to your blender.exe: pass it with `.\build.ps1 -Blender "<path to blender.exe>"`, or put it
+on the first line of `build.local.txt` next to `build.ps1` (git-ignored, so the path stays on your machine).
 
 ## License
 
